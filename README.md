@@ -7,3 +7,12 @@ To use this tool Simply:
 3. In this file, on first line add your Registration Number.
 4. On Second Line add your account password.
 5. Now you can run the exe and get notified on all updates on time.
+
+
+To run it on Startup
+1. Create a new task in Task Schedular and name it.
+2. Check the box for Run with Highest Privilege.
+3. Set Trigger as At System Startup.
+4. Set Action as Start a Program and Select Placement.exe
+5. Now add the password.txt file at location C:\Windows\System32\
+6. Run the newly created task.
