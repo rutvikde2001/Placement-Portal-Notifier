@@ -1,0 +1,4 @@
+Beautifulsoup4==4.11.1
+mechanize==0.4.8
+win10toast==0.9
+pystray==0.19.4

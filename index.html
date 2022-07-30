@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sakec Placement | Inbox</title>
+  <link rel="icon" href="favicon.png">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href=" bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="./css/ionicons.min.css">
+  <!-- fullCalendar 2.2.5-->
+  <link rel="stylesheet" href=" plugins/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href=" plugins/fullcalendar/fullcalendar.print.css" media="print">
+  <!-- Theme style -->
+  <link rel="stylesheet" href=" dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href=" dist/css/skins/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href=" plugins/iCheck/flat/blue.css">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+<header class="main-header">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>C</b>R</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Campus</b>Recruit</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="welcome.php" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          
+         
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="profile.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">DESHPANDE RUTVIK VIPIN APARNA</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="male.png" class="img-circle" alt="User Image">
+
+                <p>
+                  DESHPANDE RUTVIK VIPIN APARNA - Student
+                  <small></small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                
+                <div class="pull-right">
+                  <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="male.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>DESHPANDE RUTVIK VIPIN APARNA</p>
+          <a href="welcome.php"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+      
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      
+        <ul class="sidebar-menu">
+        <li class="header" style=" font-size: 20px; color: white;"><p>MAIN NAVIGATION</p></li>
+        <li class="treeview">
+          <a href="welcome.php">
+            <i class="fa fa-envelope"></i>
+            <span>Home</span>
+            
+          </a>
+          </li>
+         <li class="treeview">
+          <a href="getmsid.php">
+            <i class="fa fa-envelope"></i>
+            <span>Get your Microsoft Password<br>(First TIme)</span>
+          </a>
+          </li>
+        <li class="treeview">
+        <a href="get_result.php">
+        <i class="fa fa-certificate"></i>
+        <span>Get Marksheet</span>
+        </a>
+        </li>
+        <!---
+        <li class="treeview">
+        <a href="getmentorrbuddy.php">
+        <i class="fa fa-key"></i>
+        <span>MentorrBuddy Credentials</span>
+        </a>
+        </li>
+        <li class="treeview">
+        <a href="mentorrbuddy.php">
+        <i class="fa fa-registered"></i>
+        <span>MentorrBuddy Registration</span>
+        </a>
+        </li>
+        --->
+                <li class="treeview">
+          <a href="feereceipt.php">
+              <i class="fa fa-file"></i>
+              <span>Upload Fee Receipt</span>
+          </a>
+        </li>
+	            <li class="treeview">
+          <a href="document_hsc.php">
+              <i class="fa fa-list"></i>
+              <span>Fill the Document Checklist</span>
+          </a>
+        </li>
+	    	    <li class="treeview">
+          <a href="performance.php">
+              <i class="fa fa-group"></i>
+              <span>My Performance</span>
+          </a>
+        </li>
+	    <li class="treeview">
+          <a href="forgotmsidpwd.php?id=15304">
+              <i class="fa fa-group"></i>
+              <span>Reset Microsoft ID Password</span>
+          </a>
+        </li>
+	      <li class="treeview">
+          <a href="personal.php">
+            <i class="fa fa-edit"></i>
+            <span>Personal Details</span>
+            
+          </a>
+          </li>
+            <li class="treeview">
+          <a href="academic_hsc.php">
+            <i class="fa fa-book"></i>
+            <span>Academic Details</span>
+            <!-- <i class="fa fa-angle-left pull-right"></i> -->
+          </a>
+          </li>
+		  <li class="treeview">
+          <a href="resume.php">
+            <i class="fa  fa-edit"></i>
+            <span>Resume Builder</span>
+         </a>
+          </li>
+          <li class="treeview">
+          <a href="offerletter.php">
+            <i class="fa fa-file"></i>
+            <span>Upload Offer Letter</span>
+          </a>
+          </li>
+          <!---
+            <li class="treeview">
+          <a href="placement_help.php">
+            <i class="fa fa-institution"></i>
+            <span>Placement help</span>
+            
+          </a>
+          </li>
+          <li class="treeview">
+          <a href="chat.php">
+            <i class="fa fa-comments "></i>
+            <span>Support</span>
+            
+          </a>
+          </li>
+          -->
+            <li class="treeview">
+          <a href="changepassword_login.php">
+            <i class="fa fa-edit "></i>
+            <span>Change password</span>
+            
+          </a>
+          </li>
+            <li class="treeview">
+          <a target="_blank" href="http://www.shahandanchor.com/home/wp-content/uploads/Undertaking-for-Placement.pdf">
+            <i class="fa fa-share"></i>
+            <span>Undertaking</span>
+            
+          </a>
+          <!---
+          </li><li class="treeview">
+          <a href="placed.php">
+            <i class="fa fa-share"></i>
+            <span>Placement of Batch 2020</span>
+            
+          </a>
+          --->
+          </li><li class="treeview">
+          <a href="logout.php">
+            <i class="fa fa-share"></i>
+            <span>Logout</span>
+            
+          </a>
+          </li>
+        </ul>
+    <!-- /.sidebar -->
+  </aside> 
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+   
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Inbox</h3>
+
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <div class="table-responsive mailbox-messages">
+                <table class="table table-hover table-striped">
+                  <tbody>
+                  	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8241" style="color:#333"><b>Indus Valley Partners CRP Registration</b> - Dear Student,<br>
+We have started the registration process for Indus Valley Partners.<br>
+The dead...</a></td>
+	       <td class="mailbox-date" style="text-align:right">30 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8238" style="color:#333"><b>About Google Form Registration For Sciative Solution CRP</b> - Dear Student,<br>
+It is observed that many students has not filled the google form yet.<br>
+Both t...</a></td>
+	       <td class="mailbox-date" style="text-align:right">29 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8234" style="color:#333"><b>Sciative Solutions Private Ltd. CRP Registration</b> - Dear Student,<br>
+We have started with the registration process for Sciative Solutions Private Ltd....</a></td>
+	       <td class="mailbox-date" style="text-align:right">28 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8232" style="color:#333"><b>Aptitude Test (Based on Previous Questionaries of Accenture) - 27th July 2022</b> - Dear Students,<br>
+Soon we will be starting with the Campus Recruitment Process for 2023 Batch.<br>...</a></td>
+	       <td class="mailbox-date" style="text-align:right">27 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8226" style="color:#333"><b>TCS Registration Confirmation</b> - Dear Student,<br>
+Kindly fill out the below form as confirmation that you have applied successfully...</a></td>
+	       <td class="mailbox-date" style="text-align:right">20 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8223" style="color:#333"><b>Document Verification</b> - Dear Student,<br>
+Document verification will be done on Wednesday as per respective staff timings (...</a></td>
+	       <td class="mailbox-date" style="text-align:right">18 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8208" style="color:#333"><b>Cognizant Tech talk Series (06/07/2022)</b> - Dear Student,<br>
+Find the details of the Cognizant Tech Talk Series below:<br>
+Topic : 5G<br>
+Sp...</a></td>
+	       <td class="mailbox-date" style="text-align:right">06 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8197" style="color:#333"><b>Practice to Perfect - Batch 2023 Day 3 Schedule & Link</b> - Dear Student,<br>
+We will be conducting the Practice to Perfect session in online mode today.<br>
+...</a></td>
+	       <td class="mailbox-date" style="text-align:right">06 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8195" style="color:#333"><b>Day 2 Feedback</b> - Dear Students,<br>
+Kindly find the feedback link for Day 2: 5th July 2022<br>
+Quantitative Aptitud...</a></td>
+	       <td class="mailbox-date" style="text-align:right">05 Jul , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8192" style="color:#333"><b>"Practice To Perfect" - Career Guidance & Training Series - 2023 Batch</b> - Dear Student,<br>
+!!! Greetings of the Day from Training  & Placement Cell !!!<br><br>
+
+💫 A Dr...</a></td>
+	       <td class="mailbox-date" style="text-align:right">30 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8191" style="color:#333"><b>Telegram and WhatsApp Link for Placement for 2022-23 Batch</b> - Telegram Link for All: <a href="https://t.me/+fTuYGqXTBuRkOWU1" target="_blank">Click Here</a><br>
+...</a></td>
+	       <td class="mailbox-date" style="text-align:right">29 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8190" style="color:#333"><b>Online GDB Classroom Registration for Coding Mock Test</b> - Dear Student,<br>
+For Coding Practice all the Mocks will be taken using the OnlineGDB Classroom.<br...</a></td>
+	       <td class="mailbox-date" style="text-align:right">29 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8189" style="color:#333"><b>Tata Consultancy Services CRP Registration</b> - Dear Student,<br>
+We are very happy to announce the First Campus Recruitment Process (CRP) Registra...</a></td>
+	       <td class="mailbox-date" style="text-align:right">28 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8185" style="color:#333"><b>Career Guidance & Training Activities by Training & Placement Cell</b> - Dear Student,<br>
+As per the message sent earlier, we will be starting with the training activities...</a></td>
+	       <td class="mailbox-date" style="text-align:right">28 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8183" style="color:#333"><b>Career Guidance & Training Activities by Training & Placement Cell</b> - Dear Student,<br><br>
+💫 A dream without a strategy remains an Illusion💫<br><br>
+As the Campu...</a></td>
+	       <td class="mailbox-date" style="text-align:right">20 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8178" style="color:#333"><b>Cognizant Tech Talk Series - Day 6 (15th June 2022 - IT Services & Infrastructure Design in Banking & Financial Sector - An Overview)</b> - Dear Student,<br>
+Training & Placement Cell is happy to invite you to the Cognizant Talk Series in ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">14 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8172" style="color:#333"><b>Cognizant Tech talk Series (5th Day  - 13/06/2022 - Cloud Computing (AWS))</b> - Dear Student,<br>
+Training & Placement Cell is happy to invite you to the Cognizant Talk Series in ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">13 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8169" style="color:#333"><b>Trending Pro Skills 2023 </b> - Dear Student,<br>
+Kindly fill out the below google form before, Wednesday 8th June 20222, 10:00 AM....</a></td>
+	       <td class="mailbox-date" style="text-align:right">07 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8168" style="color:#333"><b>Cognizant Tech talk Series (4th Day  - 08/06/2022 - Cloud and DevOps)</b> - Dear Student,<br>
+Training & Placement Cell is happy to invite you to the Cognizant Talk Series in ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">07 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8167" style="color:#333"><b>Cognizant Tech talk Series (3rd Day  - 06/06/2022 - Solving Business Problems with the power of Data Science.)</b> - Dear Student,<br>
+Training & Placement Cell is happy to invite you to the Cognizant Talk Series in ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">06 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8166" style="color:#333"><b>Cognizant Tech talk Series (2nd Day  - 01/06/2022 - Transformation of Software Testing)</b> - Dear Student,<br>
+Training & Placement Cell is happy to invite you to the Cognizant Talk Series in ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">01 Jun , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8150" style="color:#333"><b>Training Talk Series by Cognizant</b> - Dear Student,<br>
+As informed earlier we are starting with the Training Activities for the 2023 Bat...</a></td>
+	       <td class="mailbox-date" style="text-align:right">25 May , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8096" style="color:#333"><b>Awareness Session on Tata Consultancy Services (TCS) - 7th April 2022</b> - Dear Student,<br><br>
+<i><b>!!! Greetings from the Training & Placement Cell, SAKEC !!!</b></i><br>...</a></td>
+	       <td class="mailbox-date" style="text-align:right">05 Apr , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8067" style="color:#333"><b>TCS Codevita Season 10</b> - Dear Student,<br>
+TCS has Codvita round 1 main event for the western region on Friday 11th March 20...</a></td>
+	       <td class="mailbox-date" style="text-align:right">09 Mar , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="8063" style="color:#333"><b>TCS MockVita 2</b> - Dear Student,<br>
+Kindly participate in the TCS MockVita2. It is good practice for TCS Codevita.<br...</a></td>
+	       <td class="mailbox-date" style="text-align:right">04 Mar , 2022</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="7110" style="color:#333"><b>Urgent - Cognizant 2022 Campus Hiring - Student Connect</b> - Dear Students,<br> 
+Placement season is approaching, and we are all set to bring exciting opportuni...</a></td>
+	       <td class="mailbox-date" style="text-align:right">21 Jul , 2021</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="7067" style="color:#333"><b>TCS NQT Registration - Information Collection</b> - Dear Student,<br>
+We are starting with first step of Campus Recruitment Activity for 2022 Batch.<br...</a></td>
+	       <td class="mailbox-date" style="text-align:right">19 Jul , 2021</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="7065" style="color:#333"><b>Capgemini Job Opportunity-Tech Challenge-Today is Last date to Register</b> - Dear students,<br>
+Capgemini  Job Opportunity I Capgemini to Hire 30,000 Freshers this Year I Tech ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">19 Jul , 2021</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="6851" style="color:#333"><b>Practice to Perfect Registration</b> - Dear Student,<br>
+Welcome to the Training Session Practice to Perfect.<br>
+To get all the updates ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">10 Jul , 2021</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="6016" style="color:#333"><b>A guidance session on the Cracking Civil Services Examination</b> - Dear Student,<br>
+Training & Placement Cell, is organizing A guidance session on the Cracking Civil...</a></td>
+	       <td class="mailbox-date" style="text-align:right">15 Mar , 2021</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="5700" style="color:#333"><b>NITI Aayog – Survey on employability of Egineering Student in the States</b> - Dear Student,<br>
+NITI Ayog wants to conduct a survey on the employability of engineering students....</a></td>
+	       <td class="mailbox-date" style="text-align:right">27 Feb , 2021</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="5242" style="color:#333"><b>H-Social Creator 2020</b> - Dear Student,<br>
+We have started the registration for H-Social Creator.<br>
+The deadline for regi...</a></td>
+	       <td class="mailbox-date" style="text-align:right">28 Dec , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="5120" style="color:#333"><b>INFOSYS TECHZOOKA 2020</b> - Dear Student,<br>
+We have started the registration for INFOSYS TECHZOOKA 2020.<br>
+Last date for r...</a></td>
+	       <td class="mailbox-date" style="text-align:right">20 Dec , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="4991" style="color:#333"><b>Virtual Training Series- Practice to Perfect- Day-47 Session</b> - Dear Student,<br>
+SAKEC Training and Placement Cell organizes Webinar in Virtual Training Series- P...</a></td>
+	       <td class="mailbox-date" style="text-align:right">29 Nov , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="4919" style="color:#333"><b>Conversation with CodeChef Registration</b> - Dear Student,<br>
+We have started the registration process for Conversation with CodeChef scheduled...</a></td>
+	       <td class="mailbox-date" style="text-align:right">20 Nov , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="4915" style="color:#333"><b>CodeChefs Indian Programming Camp</b> - Dear Student,<br>
+We have started the registration process for CodeChefs Indian Programming Camp sc...</a></td>
+	       <td class="mailbox-date" style="text-align:right">20 Nov , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="4703" style="color:#333"><b>Virtual Industrial Visit</b> - Dear Student,<br>
+We have started the registration process for the Virtual Industrial Visit<br>
+Th...</a></td>
+	       <td class="mailbox-date" style="text-align:right">20 Oct , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="2234" style="color:#333"><b>Updation of Data on Placement Portal.</b> - Dear Student,<br>
+We have enabled the option to update your data on the Placement Portal.<br>
+You ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">11 Aug , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="1935" style="color:#333"><b>Temporary Reset Password of Microsoft ID</b> - <br>Dear DESHPANDE RUTVIK VIPIN APARNA (15304),<br>Your password for official SAKEC Microsoft ID is ...</a></td>
+	       <td class="mailbox-date" style="text-align:right">14 Jun , 2020</td>
+    </tr>
+    
+	
+	
+	<tr>
+	       <td class="mailbox-subject"><a href="#" class="view-message" id="1931" style="color:#333"><b>Confirmation of Registration for Practice to Perfect Virtual Training Series</b> - <br>Dear DESHPANDE RUTVIK VIPIN APARNA (15304),<br>Thank you for registering for the Training & Plac...</a></td>
+	       <td class="mailbox-date" style="text-align:right">09 Jun , 2020</td>
+    </tr>
+    
+	                  </tbody>
+                </table>
+                <!-- /.table -->
+              </div>
+              <!-- /.mail-box-messages -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /. box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+ <footer class="main-footer" style="background:#ecf0f5">
+    <strong>Copyright &copy; 2016-2022 <a href="http://www.shahandanchor.com/home" target="_blank">Shah And Anchor Kutchhi Engineering College</a>.</strong> All rights
+    reserved.
+  </footer>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    
+
+  </div>
+</div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.1.4 -->
+<script src=" plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src=" bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src=" plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src=" plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src=" dist/js/app.min.js"></script>
+<!-- iCheck -->
+<script src=" plugins/iCheck/icheck.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src=" dist/js/demo.js"></script>
+<script>
+$(document).ready(function(){
+	$(".view-message").click(function(){
+		var id=$(this).attr('id');
+		$.ajax({
+			type:"GET",
+			url:"viewmessage.php?id="+id,
+			cache:false,
+			success:function(data){
+				$("#myModal>div").empty();
+				$("#myModal>div").append(data);
+				$("#myModal").modal();
+			}
+		})
+	})
+})
+</script>
+</body>
+</html>
