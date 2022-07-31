@@ -12,7 +12,7 @@ To use this tool Simply:
 To run it on Startup
 1. Create a new task in Task Schedular and name it.
 2. Check the box for Run with Highest Privilege.
-3. Set Trigger as At System Startup.
+3. Set Trigger as At log on of any User.
 4. Set Action as Start a Program and Select Placement.exe
 5. Now add the password.txt file at location C:\Windows\System32\
 6. Run the newly created task.
