@@ -1,5 +1,5 @@
 # Placement-Portal-Notifier
-A simple Python Web-Scraping script that notifies user if there is any new update on SAKEC's Placement Portal 
+A simple Python Web-Scraping script that notifies user if there is any new update on SAKEC's Placement Portal for Windows 10 & 11
 
 To use this tool Simply:
 1. Download Directory dist>Placement.exe
