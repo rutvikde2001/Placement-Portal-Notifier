@@ -16,3 +16,5 @@ To run it on Startup
 4. Set Action as Start a Program and Select Placement.exe
 5. Now add the password.txt file at location C:\Windows\System32\
 6. Run the newly created task.
+
+![InkedScreenshot 2022-08-01 000822](https://user-images.githubusercontent.com/68609114/182040668-b9b96e4f-8344-4071-9c67-9e884e54ea07.jpg)
