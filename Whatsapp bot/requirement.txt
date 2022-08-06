@@ -1,0 +1,5 @@
+Beautifulsoup4==4.11.1
+mechanize==0.4.8
+selenium==3.12.0
+requests==2.20.0
+Pillow==8.1.1
