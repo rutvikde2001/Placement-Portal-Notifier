@@ -17,6 +17,7 @@ page_url = "http://shahandanchor.com/placement/welcome.php"
 def getdetails():
     cj = http.cookiejar.CookieJar()
     br = mechanize.Browser()
+    br.set_handle_robots(False)
     br.set_cookiejar(cj)
     br.open("http://shahandanchor.com/placement/index.php")
 
@@ -34,10 +35,9 @@ for table in s.findAll('table',{"class":"table"}):
         nrows = len(table.findAll(lambda tag: tag.name == 'tr' and tag.findParent('table') == table))
 
 
-whatsapp = WhatsApp(50)
+whatsapp = WhatsApp(50,session=r'C:\Users\{}\AppData\Local\Google\Chrome\User Data'.format(os.getlogin())) #Device user name 
 print("done")
 while True:
-        
     soup = getdetails()
     for table in soup.findAll('table',{"class":"table"}):
         number_of_rows = len(table.findAll(lambda tag: tag.name == 'tr' and tag.findParent('table') == table))
@@ -45,9 +45,9 @@ while True:
         t = top[0].find("b")
     if number_of_rows > nrows:
         nrows = number_of_rows      
-        print(whatsapp.send_message("High on strings","*Update*\n\nSubject: "+t.text))  
-        
+        print(whatsapp.send_message("High on strings","*Update*\n\n*Subject:* "+t.text))  
+        print(whatsapp.send_message("Core Csi","*Update*\n\n*Subject:* "+t.text))  
     # short delay between notifications
-    time.sleep(7200)
+    time.sleep(900)
     
     
