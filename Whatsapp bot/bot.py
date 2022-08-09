@@ -47,6 +47,7 @@ while True:
         nrows = number_of_rows      
         whatsapp.send_message("High on strings","*Update*\n\n*Subject:* "+t.text) 
         whatsapp.send_message("Blah blah blah blah","*Update*\n\n*Subject:* "+t.text)
+        whatsapp.send_message("SAKEC Family","*Update*\n\n*Subject:* "+t.text)
         print(whatsapp.send_message("Core Csi","*Update*\n\n*Subject:* "+t.text))  
     # short delay between notifications
     time.sleep(900)
