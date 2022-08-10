@@ -38,17 +38,21 @@ for table in s.findAll('table',{"class":"table"}):
 whatsapp = WhatsApp(50,session=r'C:\Users\{}\AppData\Local\Google\Chrome\User Data'.format(os.getlogin())) #Device user name 
 print("done")
 while True:
-    soup = getdetails()
-    for table in soup.findAll('table',{"class":"table"}):
-        number_of_rows = len(table.findAll(lambda tag: tag.name == 'tr' and tag.findParent('table') == table))
-        top = table.findAll('td',{"class":"mailbox-subject"},limit=1)
-        t = top[0].find("b")
-    if number_of_rows > nrows:
-        nrows = number_of_rows      
-        whatsapp.send_message("High on strings","*Placement Update*\n\n*Subject:* "+t.text) 
-        whatsapp.send_message("Blah blah blah blah","*Placement Update*\n\n*Subject:* "+t.text)
-        whatsapp.send_message("SAKEC Family","*Placement Update*\n\n*Subject:* "+t.text)
-        print(whatsapp.send_message("Core Csi","*Placement Update*\n\n*Subject:* "+t.text))  
+    try:
+        soup = getdetails()
+        for table in soup.findAll('table',{"class":"table"}):
+            number_of_rows = len(table.findAll(lambda tag: tag.name == 'tr' and tag.findParent('table') == table))
+            top = table.findAll('td',{"class":"mailbox-subject"},limit=1)
+            t = top[0].find("b")
+        if number_of_rows > nrows:
+            nrows = number_of_rows      
+            whatsapp.send_message("High on strings","*Placement Update*\n\n*Subject:* "+t.text) 
+            whatsapp.send_message("Blah blah blah blah","*Placement Update*\n\n*Subject:* "+t.text)
+            whatsapp.send_message("SAKEC Family","*Placement Update*\n\n*Subject:* "+t.text)
+            print(whatsapp.send_message("Core Csi","*Placement Update*\n\n*Subject:* "+t.text))  
+    except:
+        print("Error in connecting")
+        
     # short delay between notifications
     time.sleep(900)
     
