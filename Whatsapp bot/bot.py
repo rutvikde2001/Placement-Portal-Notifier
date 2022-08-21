@@ -49,6 +49,7 @@ while True:
             whatsapp.send_message("High on strings","*Placement Update*\n\n*Subject:* "+t.text) 
             whatsapp.send_message("Blah blah blah blah","*Placement Update*\n\n*Subject:* "+t.text)
             whatsapp.send_message("SAKEC Family","*Placement Update*\n\n*Subject:* "+t.text)
+            whatsapp.send_message("Send notes","*Placement Update*\n\n*Subject:* "+t.text)
             print(whatsapp.send_message("Core Csi","*Placement Update*\n\n*Subject:* "+t.text))  
     except:
         print("Error in connecting")
