@@ -43,13 +43,15 @@ while True:
         for table in soup.findAll('table',{"class":"table"}):
             number_of_rows = len(table.findAll(lambda tag: tag.name == 'tr' and tag.findParent('table') == table))
             top = table.findAll('td',{"class":"mailbox-subject"},limit=1)
-            t = top[0].find("b")
+            t = top[0].find("a")
         if number_of_rows > nrows:
             nrows = number_of_rows      
-            whatsapp.send_message("High on strings","*Placement Update*\n\n*Subject:* "+t.text) 
+            whatsapp.send_message("To cut the veins","*Placement Update*\n\n*Subject:* "+t.text) 
             whatsapp.send_message("Blah blah blah blah","*Placement Update*\n\n*Subject:* "+t.text)
             whatsapp.send_message("SAKEC Family","*Placement Update*\n\n*Subject:* "+t.text)
             whatsapp.send_message("Send notes","*Placement Update*\n\n*Subject:* "+t.text)
+            whatsapp.send_message("Aditya Shah Sakec","*Placement Update*\n\n*Subject:* "+t.text)
+            whatsapp.send_message("Jagjot Singh","*Placement Update*\n\n*Subject:* "+t.text)
             print(whatsapp.send_message("Unofficial BE Project","*Placement Update*\n\n*Subject:* "+t.text))  
     except:
         print("Error in connecting")
