@@ -64,5 +64,5 @@ while True:
         print("Error in connecting")
     
     # short delay between notifications
-    time.sleep(5)
+    time.sleep(900)
     
