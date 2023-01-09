@@ -38,4 +38,3 @@ To use this tool Simply:
 
 ![image](https://user-images.githubusercontent.com/68609114/211365609-44a372eb-e7d1-47da-bfad-8aa0bc6bcf17.png)
 
-10.
