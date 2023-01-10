@@ -49,6 +49,8 @@ class WhatsApp:
     def __init__(self, wait, screenshot=None, session=None):
         chrome_options = Options()
         if session:
+            #chrome_options.add_argument("--headless")
+            #chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--user-data-dir={}".format(session))
             self.browser = webdriver.Chrome(options=chrome_options)  # we are using chrome as our webbrowser
         else:

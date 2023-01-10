@@ -6,6 +6,9 @@ import http.cookiejar ## http.cookiejar in python3
 from whatsapp import WhatsApp
 import json
 
+nameList = ["To cut the veins","Blah blah blah blah","SAKEC Family","Send notes","Abhay Gori Sakec","Jagjot Singh","Aditya Shah Sakec","Unofficial BE Project"]
+
+
 nrows = 0
 mypass = os.getcwd()+"/password.txt"
 file = open(mypass,"r")
@@ -49,14 +52,8 @@ while True:
                 t = i.find("a")
                 if(data.get(t.text) is None):
                     data[str(t.text)]=1
-                    whatsapp.send_message("To cut the veins","*Placement Update*\n\n*Subject:* "+t.text) 
-                    whatsapp.send_message("Blah blah blah blah","*Placement Update*\n\n*Subject:* "+t.text)
-                    whatsapp.send_message("SAKEC Family","*Placement Update*\n\n*Subject:* "+t.text)
-                    whatsapp.send_message("Send notes","*Placement Update*\n\n*Subject:* "+t.text)
-                    whatsapp.send_message("Abhay Gori Sakec","*Placement Update*\n\n*Subject:* "+t.text)
-                    whatsapp.send_message("Aditya Shah Sakec","*Placement Update*\n\n*Subject:* "+t.text)
-                    whatsapp.send_message("Jagjot Singh","*Placement Update*\n\n*Subject:* "+t.text)
-                    print(whatsapp.send_message("Unofficial BE Project","*Placement Update*\n\n*Subject:* "+t.text))
+                    for abc in nameList:
+                        whatsapp.send_message(abc,"*Placement Update*\n\n*Subject:* "+t.text) 
                     with open("data.txt", 'w') as f:
                         jsonserial = json.dumps(data, indent=4)
                         f.write(jsonserial)
