@@ -6,7 +6,7 @@ import http.cookiejar ## http.cookiejar in python3
 from whatsapp import WhatsApp
 import json
 
-nameList = ["To cut the veins","Blah blah blah blah","SAKEC Family","Send notes","Abhay Gori Sakec","Jagjot Singh","Aditya Shah Sakec","Unofficial BE Project"]
+nameList = ["Blah blah blah blah","SAKEC Family","Send notes","Abhay Gori Sakec","Jagjot Singh","Aditya Shah Sakec","Unofficial BE Project","High on strings"]
 
 
 nrows = 0
@@ -54,6 +54,7 @@ while True:
                     data[str(t.text)]=1
                     for abc in nameList:
                         whatsapp.send_message(abc,"*Placement Update*\n\n*Subject:* "+t.text) 
+                        time.sleep(5)
                     with open("data.txt", 'w') as f:
                         jsonserial = json.dumps(data, indent=4)
                         f.write(jsonserial)

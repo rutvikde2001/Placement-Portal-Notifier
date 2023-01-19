@@ -96,5 +96,6 @@
     "Temporary Reset Password of Microsoft ID - Dear DESHPANDE RUTVIK VIPIN APARNA (15304),Your password for official SAKEC Microsoft ID is ...": 1,
     "Confirmation of Registration for Practice to Perfect Virtual Training Series - Dear DESHPANDE RUTVIK VIPIN APARNA (15304),Thank you for registering for the Training & Plac...": 1,
     "Vistex Asia Pacific Pvt Limited CRP Registration - Dear Student, \nWe have started with the registration process for Vistex Asia Pacific Pvt Limite...": 1,
-    "Deloitte US-India CRP Registration - Dear Student, \nWe would like to inform you that, Deloitte is organizing a Pool Campus Recruitme...": 1
+    "Deloitte US-India CRP Registration - Dear Student, \nWe would like to inform you that, Deloitte is organizing a Pool Campus Recruitme...": 1,
+    "TuringMinds.Ai CRP Registration - Dear students, \nWe have started registration for TuringMinds.Ai CRP. \nPlease find the job ...": 1
 }
